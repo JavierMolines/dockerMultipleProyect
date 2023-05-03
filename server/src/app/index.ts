@@ -4,7 +4,7 @@ const port = 2031;
 
 app.get("/", function (req: Request, res: Response) {
 	res.json({
-		message: "Hello XML Server!.",
+		message: "Hello Server!.",
 	});
 });
 
