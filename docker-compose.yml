@@ -17,4 +17,4 @@ services:
     ports:
       - 2031:2031
     volumes:
-      - ./server/:/app/
+      - ./server/src/:/app/src/
