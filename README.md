@@ -10,6 +10,7 @@
 
 ```bash
 cd projectFullStack
+npm run init
 docker compose up
 ```
 

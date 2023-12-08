@@ -6,7 +6,9 @@
 	"scripts": {
 		"prepare": "husky install",
 		"lint": "biome format . --write",
-		"check": "biome check . --apply"
+		"check": "biome check . --apply",
+		"init": "npm i && cd server && npm i",
+		"reload": "rm -rf node_modules/ && rm -rf server/node_modules/"
 	},
 	"keywords": [],
 	"author": "",
