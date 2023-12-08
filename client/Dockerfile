@@ -1,9 +1,15 @@
-FROM nginx
+FROM node:lts-alpine AS builder
+
+WORKDIR /app
+
+COPY ./client/ ./
+RUN npm install
+RUN npm run build
+
+FROM nginx:stable-alpine
 
 WORKDIR /usr/share/nginx/html
 
-COPY ./client/index.css ./index.css
-COPY ./client/index.html ./index.html
-COPY ./client/index.js ./index.js
+COPY --from=builder /app/dist/ ./
 
 EXPOSE 80
