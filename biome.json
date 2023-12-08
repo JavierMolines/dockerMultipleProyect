@@ -7,6 +7,6 @@
 		}
 	},
 	"files": {
-		"ignore": ["./build/*.js", "./build/*.ts"]
+		"ignore": ["./build/*.js", "./build/*.ts", "./client/dist/*.js"]
 	}
 }
