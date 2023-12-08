@@ -1,0 +1,21 @@
+{
+	"name": "dockermultipleproject",
+	"version": "1.0.0",
+	"description": "## Development Require ``` - Docker - Terminal (kitty 😉) ```",
+	"main": "index.js",
+	"scripts": {
+		"prepare": "husky install",
+		"lint": "biome format . --write",
+		"check": "biome check . --apply"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@biomejs/biome": "1.4.1",
+		"husky": "8.0.3",
+		"jav-blast-setup": "1.0.14",
+		"vite": "5.0.6",
+		"vitest": "1.0.2"
+	}
+}

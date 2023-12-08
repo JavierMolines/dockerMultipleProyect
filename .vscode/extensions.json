@@ -1,6 +1,3 @@
 {
-  "recommendations": [
-    "usernamehw.errorlens",
-    "rome.rome"
-  ]
+	"recommendations": ["usernamehw.errorlens", "biomejs.biome"]
 }
