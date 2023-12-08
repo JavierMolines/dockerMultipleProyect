@@ -9,7 +9,7 @@
 ## Run project
 
 ```bash
-cd dockerMultipleProject
+cd projectFullStack
 docker compose up
 ```
 
