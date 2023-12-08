@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY ./server/ ./
 
-RUN npm install
+RUN npm install --production
 
 CMD [ "npm", "run", "dev" ]
 
