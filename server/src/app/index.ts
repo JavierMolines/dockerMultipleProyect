@@ -1,4 +1,4 @@
-import express, { Request, Response } from "express";
+import express, { type Request, type Response } from "express";
 import { fetch } from "./fetch";
 import { loggerMiddleware } from "./middleware";
 
