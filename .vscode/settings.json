@@ -5,19 +5,16 @@
 		"source.fixAll": "explicit"
 	},
 	"[typescript]": {
-		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[javascript]": {
-		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[javascriptreact]": {
-		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[json]": {
-		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "biomejs.biome"
-	}
+	},
+	"cSpell.words": ["biomejs"]
 }

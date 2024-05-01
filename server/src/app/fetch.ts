@@ -1,23 +1,29 @@
 import https from "node:https";
+import type { IncomingMessage } from "node:http";
 
 const fetch = async (url: string) => {
-	return new Promise((resolve, reject) => {
-		https
-			.get(url, (response) => {
-				let data = "";
+	const executorPromise = (
+		resolve: (value?: any) => void,
+		reject: (reason?: any) => void,
+	) => {
+		const handlerStream = (response: IncomingMessage) => {
+			let data = "";
 
-				response.on("data", (chunk) => {
-					data += chunk;
-				});
-
-				response.on("end", () => {
-					resolve(JSON.parse(data));
-				});
-			})
-			.on("error", (error) => {
-				reject(error);
+			response.on("data", (chunk: any) => {
+				data += chunk;
 			});
-	});
+
+			response.on("end", () => {
+				resolve(JSON.parse(data));
+			});
+		};
+
+		https.get(url, handlerStream).on("error", (error) => {
+			reject(error);
+		});
+	};
+
+	return new Promise(executorPromise);
 };
 
 export { fetch };
