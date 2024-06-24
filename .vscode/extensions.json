@@ -1,3 +1,7 @@
 {
-	"recommendations": ["usernamehw.errorlens", "biomejs.biome", "humao.rest-client"]
+	"recommendations": [
+		"usernamehw.errorlens",
+		"biomejs.biome",
+		"humao.rest-client"
+	]
 }
