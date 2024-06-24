@@ -1,5 +1,5 @@
-import https from "node:https";
 import type { IncomingMessage } from "node:http";
+import https from "node:https";
 
 const fetch = async (url: string) => {
 	const executorPromise = (
