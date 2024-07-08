@@ -13,7 +13,7 @@ docker compose up
 
 ## Run project locally
 ```bash
-npm run install
+npm install
 npm run dev
 ```
 
