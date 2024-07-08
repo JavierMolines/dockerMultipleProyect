@@ -1,6 +1,6 @@
 FROM node:lts-alpine AS builder
 
-WORKDIR /app
+WORKDIR /frontend
 
 COPY ./client/ ./
 RUN npm install
@@ -10,6 +10,6 @@ FROM nginx:stable-alpine
 
 WORKDIR /usr/share/nginx/html
 
-COPY --from=builder /app/dist/ ./
+COPY --from=builder /frontend/dist/ ./
 
 EXPOSE 80
