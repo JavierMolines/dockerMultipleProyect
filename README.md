@@ -6,22 +6,25 @@
 - Terminal (kitty 😉)
 ```
 
-## Run project
-
-```bash
-cd projectFullStack
-npm run init
+## Run with Docker (Optional)
+```
 docker compose up
+```
+
+## Run project locally
+```bash
+npm run install
+npm run dev
 ```
 
 ## Instances running
 
 ```bash
-# Client project run in port: 2025
-curl http://localhost:2025
+# Client project run in port
+curl http://localhost:5173 # Docker port 5001
 ```
 
 ```bash
-# Server project run in port: 2031
-curl http://localhost:2031
+# Server project run in port
+curl http://localhost:3000 # Docker port 5002
 ```
