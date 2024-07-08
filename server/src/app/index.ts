@@ -3,7 +3,7 @@ import { fetch } from "./fetch";
 import { loggerMiddleware } from "./middleware";
 
 const app = express();
-const port = 2031;
+const port = process.env.PORT || 3000;
 
 app.use(loggerMiddleware);
 
