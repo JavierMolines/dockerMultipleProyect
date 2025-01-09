@@ -1,4 +1,4 @@
-import express, { type Request, type Response } from "express";
+import express, { type Response } from "express";
 import { fetch } from "./fetch";
 import { loggerMiddleware } from "./middleware";
 
@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 app.use(loggerMiddleware);
 
-app.get("/", async (req: Request, res: Response) => {
+app.get("/", async (_, res: Response) => {
 	const data = await fetch("https://randomuser.me/api/");
 	res.json({
 		message: "Random User!.",
